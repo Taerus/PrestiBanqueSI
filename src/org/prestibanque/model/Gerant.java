@@ -16,8 +16,8 @@ public class Gerant {
 	}
 	
 	/**
-	 * Ajouter le conseiller passé en paramètre à la liste des conseillers.
-	 * @param c Conseiller à ajouter à la liste des conseillers
+	 * Ajouter le conseiller passÃ© en paramÃ¨tre Ã  la liste des conseillers.
+	 * @param c Conseiller Ã  ajouter Ã  la liste des conseillers
 	 */
 	public void addConseiller(Conseiller c){
 		this.conseillers.addElement(c);

@@ -25,8 +25,8 @@ public class Conseiller {
 	
 	/**
 	 * Cherche et retourne un client dans le vector clients.
-	 * @param identifiant Identifiant du client recherché
-	 * @return Client dont l'identifiant est passé en paramètre, null si celui-ci n'existe pas
+	 * @param identifiant Identifiant du client recherchÃ©
+	 * @return Client dont l'identifiant est passÃ© en paramÃ¨tre, null si celui-ci n'existe pas
 	 */
 	public Client trouverClient(int identifiant){
 		Client retour = null;
@@ -42,8 +42,8 @@ public class Conseiller {
 	}
 	
 	/**
-	 * Ajoute un client à la liste des clients du conseiller
-	 * @param cli Client à ajouter dans le vector clients.
+	 * Ajoute un client Ã  la liste des clients du conseiller
+	 * @param cli Client Ã  ajouter dans le vector clients.
 	 */
 	public void addClient(Client cli){
 		this.clients.addElement(cli);
