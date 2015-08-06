@@ -21,7 +21,7 @@ public class CompteCourant extends Compte {
     }
 
 
-    // Getters / Setters
+    // Accesseurs
 
     public double getAutorisationDecouvert() {
         return autorisationDecouvert;
@@ -29,6 +29,10 @@ public class CompteCourant extends Compte {
 
     public void setAutorisationDecouvert(Float autorisationDecouvert) {
         this.autorisationDecouvert = autorisationDecouvert;
+    }
+
+    public boolean estSousLeSeuilDeDecouvert() {
+        return getSolde() < autorisationDecouvert;
     }
 
 }

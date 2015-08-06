@@ -1,7 +1,7 @@
 package org.prestibanque.exceptions;
 
 
-public class InvalidNumberException extends RuntimeException {
+public class InvalidNumberException extends InvalidOperationException {
 
     public InvalidNumberException() {
     }

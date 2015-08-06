@@ -2,6 +2,7 @@ package org.prestibanque.model;
 
 
 import org.prestibanque.exceptions.InvalidNumberException;
+import org.prestibanque.exceptions.InvalidOperationException;
 
 import java.util.Date;
 
@@ -23,7 +24,7 @@ public class CompteEpargne extends Compte {
     }
 
 
-    // Getters / Setters
+    // Accesseurs
 
     public float getTaux() {
         return taux;
@@ -36,4 +37,14 @@ public class CompteEpargne extends Compte {
         this.taux = taux;
     }
 
+    // Méthodes
+
+
+    @Override
+    public void debiter(double montant) throws InvalidOperationException {
+        if (getSolde() - montant < 0) {
+            throw new InvalidOperationException("Le découvert n'est pas autorisé sur un compte épargne");
+        }
+        super.debiter(montant);
+    }
 }
