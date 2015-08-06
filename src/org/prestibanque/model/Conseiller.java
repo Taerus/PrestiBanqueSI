@@ -1,6 +1,6 @@
 package org.prestibanque.model;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * @author nubinub
@@ -8,18 +8,18 @@ import java.util.Vector;
  */
 public class Conseiller {	
 	//conseiller attributes
-	private Vector<Client> clients;
+	private ArrayList<Client> clients;
 	
 	public Conseiller(){
 		super();
-		this.clients = new Vector<Client>();
+		this.clients = new ArrayList<Client>();
 	}	
 	
 	//Getters and Setters
-	public Vector<Client> getClients(){
+	public ArrayList<Client> getClients(){
 		return this.clients;
 	}
-	public void setClients(Vector<Client> clients){
+	public void setClients(ArrayList<Client> clients){
 		this.clients = clients;
 	}
 	
@@ -32,8 +32,8 @@ public class Conseiller {
 		Client retour = null;
 		
 		for(int i=0;i<clients.size();++i){
-			if(clients.elementAt(i).getId()==identifiant){
-				retour = clients.elementAt(i);
+			if(clients.get(i).getId()==identifiant){
+				retour = clients.get(i);
 				break;
 			}
 		}
@@ -46,7 +46,7 @@ public class Conseiller {
 	 * @param cli Client à ajouter dans le vector clients.
 	 */
 	public void addClient(Client cli){
-		this.clients.addElement(cli);
+		this.clients.add(cli);
 	}
 	
 }

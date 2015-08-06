@@ -1,6 +1,6 @@
 package org.prestibanque.model;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * @author nubinub
@@ -8,11 +8,11 @@ import java.util.Vector;
  */
 public class Gerant {
 
-	private Vector<Conseiller> conseillers;
+	private ArrayList<Conseiller> conseillers;
 	
 	public Gerant(){
 		super();
-		this.conseillers = new Vector<Conseiller>();
+		this.conseillers = new ArrayList<Conseiller>();
 	}
 	
 	/**
@@ -20,6 +20,6 @@ public class Gerant {
 	 * @param c Conseiller à ajouter à la liste des conseillers
 	 */
 	public void addConseiller(Conseiller c){
-		this.conseillers.addElement(c);
+		this.conseillers.add(c);
 	}
 }
