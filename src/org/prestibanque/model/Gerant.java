@@ -15,6 +15,13 @@ public class Gerant {
 		this.conseillers = new ArrayList<Conseiller>();
 	}
 	
+	public ArrayList<Conseiller> getConseillers(){
+		return conseillers;
+	}
+	public void setConseillers(ArrayList<Conseiller> conseillers){
+		this.conseillers = conseillers;
+	}
+	
 	/**
 	 * Ajouter le conseiller passé en paramètre à la liste des conseillers.
 	 * @param c Conseiller à ajouter à la liste des conseillers
