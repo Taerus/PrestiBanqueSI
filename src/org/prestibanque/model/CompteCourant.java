@@ -27,7 +27,7 @@ public class CompteCourant extends Compte {
         return autorisationDecouvert;
     }
 
-    public void setAutorisationDecouvert(Float autorisationDecouvert) {
+    public void setAutorisationDecouvert(double autorisationDecouvert) {
         this.autorisationDecouvert = autorisationDecouvert;
     }
 
