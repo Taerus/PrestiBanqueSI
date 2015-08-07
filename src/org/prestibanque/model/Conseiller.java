@@ -24,16 +24,16 @@ public class Conseiller {
 	}
 	
 	/**
-	 * Cherche et retourne un client dans le vector clients.
+	 * Recherche un client dans la liste de clients
 	 * @param identifiant Identifiant du client recherché
 	 * @return Client dont l'identifiant est passé en paramètre, null si celui-ci n'existe pas
 	 */
 	public Client trouverClient(int identifiant){
 		Client retour = null;
 		
-		for(int i=0;i<clients.size();++i){
-			if(clients.get(i).getId()==identifiant){
-				retour = clients.get(i);
+		for(Client c : clients){
+			if(c.getId()==identifiant){
+				retour = c;
 				break;
 			}
 		}
@@ -43,7 +43,7 @@ public class Conseiller {
 	
 	/**
 	 * Ajoute un client à la liste des clients du conseiller
-	 * @param cli Client à ajouter dans le vector clients.
+	 * @param cli Client à ajouter dans la liste de clients.
 	 */
 	public void addClient(Client cli){
 		this.clients.add(cli);
